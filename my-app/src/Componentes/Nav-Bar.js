@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 function NavBar() { 
     return(
         <React.Fragment>
@@ -10,7 +11,7 @@ function NavBar() {
                 </div>
                 <div>
                     <ul className="Links">
-                        <li><a href="#">inicio</a></li>
+                        <li><Link to={`/`}>Inicio</Link></li>
                         <li><a href="#">cuenta</a></li>
                         <li><a href="#">Ayuda</a></li>
                     </ul>

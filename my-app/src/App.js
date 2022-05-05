@@ -2,14 +2,19 @@
 import React from 'react'
 import NavBar from './Componentes/Nav-Bar'
 import './App.css';
-import Productos from './Componentes/Productos';
-import inventario from './Componentes/data/inventario';
+import {BrowserRouter, Routes,Route} from 'react-router-dom'
+import ItemListConteiner from './Componentes/ItemListConteiner';
+import ItemDeatils from './Componentes/ItemDeatils';
+
 function App() {
   return (
-    <React.Fragment>
+   <BrowserRouter>
       <NavBar/>
-      <Productos />
-    </React.Fragment>
+      <Routes>
+        <Route path='/' element={<ItemListConteiner/>}></Route>
+        <Route path='/Item/:ItemId' element={<ItemDeatils/>}></Route>
+      </Routes>
+   </BrowserRouter>
   );
 }
 
