@@ -10,9 +10,7 @@ const ItemList = () => {
   }, []);
   const getItems = ()=>{
     const getItemsPromise = new Promise((resolve ) => {
-      setTimeout(()=>{
-        resolve(inventario)
-      },1000)
+     resolve(inventario)
     })
     getItemsPromise.then(data => {
       setItems(data)
@@ -21,7 +19,7 @@ const ItemList = () => {
   
   
   return (
-    <div>{Items.map(i => <ItemCard key={i.id} item={i}/>)}</div>
+    <div className='row'>{Items.map(i => <ItemCard key={i.id} item={i}/>)}</div>
   )
 }
 
