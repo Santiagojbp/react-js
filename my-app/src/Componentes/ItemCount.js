@@ -2,17 +2,22 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import { Button } from 'react-bootstrap'
 
-const ItemCount = () => {
-    const [count, setcount] = useState(second);
-    const onAdd = ()=>{
 
-    }
-    return (
+const ItemCount = ({onAdd}) => {
+  const [count, setcount] = useState(0);
+  const addHandler =()=>{
+    setcount(count + 1)
+  }
+  const resHandler =()=>{
+    setcount(count - 1)
+  }
+  
+  return (
     <React.Fragment>
-        <Button >+</Button>
+        <Button onClick={addHandler}>+</Button>
         <strong>{count}</strong>
-        <Button>-</Button>
-        <Button onClick={onAdd}>Agregar</Button>
+        <Button onClick={resHandler}>-</Button>
+        <Button onClick={onAdd}>agregar</Button>
     </React.Fragment>
   )
 }
