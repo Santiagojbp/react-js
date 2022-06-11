@@ -1,0 +1,12 @@
+.cartWidget{
+    display: flex;
+    flex-direction: row;
+    justify-content: end !important;
+    border:white;
+    color:aqua;
+    margin-top: 10px;
+    padding-left: 2px;
+    padding-right: 5px;
+    width: 35px;
+    position: absolute ;
+}
