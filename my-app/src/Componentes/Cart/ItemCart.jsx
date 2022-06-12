@@ -6,12 +6,13 @@ const ItemCart = ({item}) => {
     const {deleteFromCart} = useContext(CartContext)
   return (
     <>
-        <div>
-            <p>{item.title}</p>
+        <div className='row pCart'>
+            <p className='col-lg-3'>{item.title}</p>
+            <p className='col-lg-3'>{item.quantiti}</p>
+            <p className='col-lg-3'>{item.price}</p>
+            <button  className='col-lg-3' onClick={()=>deleteFromCart(item)}><i class="bi bi-cart-dash"></i></button>
         </div>
-        <div>
-            <button onClick={()=>deleteFromCart(item)}>quitar</button>
-        </div>
+            
     </>
   )
 }

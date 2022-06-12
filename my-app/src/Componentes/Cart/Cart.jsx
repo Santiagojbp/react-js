@@ -9,7 +9,7 @@ const Cart = () => {
   
   if (cart.length == 0) {
     return(
-      <div>
+      <div className='vacio'>
         <p>carrito vacio</p>
       </div>
     )
@@ -22,13 +22,13 @@ const Cart = () => {
                         return <ItemCart key={item.id} item={item}></ItemCart>;
                     })}
           </div>
-          <div>
-            <p>cantidad:{cantidadItemsInCart()}</p>
-            <p>precio Toral:{pTotal()}</p>
-            <button onClick={()=>cleanCart()}>Vaviar Carrito</button>
+          <div className='row totales'>
+            <p className='col-lg-2'>cantidad:{cantidadItemsInCart()}</p>
+            <p className='col-lg-2'>precio Toral:{pTotal()}</p>
           </div>
-          <div>
-            <NavLink to={'/terminar_compra'}>Terminar Compra</NavLink>
+          <div className='row cBtn'>
+            <button className='col-lg-9 ' onClick={()=>cleanCart()}><i class="bi bi-cart-x"></i></button>
+            <NavLink to={'/terminar_compra'}><button >finalizar compra</button></NavLink>
           </div>
         </div>
     )

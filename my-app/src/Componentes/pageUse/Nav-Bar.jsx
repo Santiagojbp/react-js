@@ -17,9 +17,9 @@ function NavBar() {
                             <div className="col-lg-11">
                                 <ul className="Links">
                                     <li><NavLink className='NavLink' to={`/`}>Inicio</NavLink></li>
-                                    <li><NavLink className='NavLink' to={'/cuenta'}>Cuenta</NavLink></li>
-                                    <li><NavLink className='NavLink' to={'/ayuda'}>Ayuda</NavLink></li>
-
+                                    <li><NavLink className='NavLink' to={`/categoria/Una`}>Una Abitacion</NavLink></li>
+                                    <li><NavLink className='NavLink' to={'/categoria/dos'}>Dos Abitaciones</NavLink></li>
+                                    <li><NavLink className='NavLink' to={'/categoria/tres'}>Tres Abitaciones</NavLink></li>
                                 </ul>
                             </div>
                             <div className="col-lg-1">
@@ -27,9 +27,7 @@ function NavBar() {
                             </div>
                         </div> 
                         <ul className="Links">
-                            <li><NavLink className='NavLink' to={`/categoria/Una`}>Una Abitacion</NavLink></li>
-                            <li><NavLink className='NavLink' to={'/categoria/dos'}>Dos Abitaciones</NavLink></li>
-                            <li><NavLink className='NavLink' to={'/categoria/tres'}>Tres Abitaciones</NavLink></li>
+                            
                         </ul>
                     </nav> 
                 </div>

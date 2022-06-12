@@ -42,17 +42,15 @@ const FinalizarCompra = () => {
   }
     return (
     <>
-        <form>
-            <div>
-              <input type="text" name='nombre' onChange={(evn) => cargarDatos(evn)} value={client.nombre} placeholder="nombre" />
-              <input type="text" name='apellido' onChange={(evn)=>  cargarDatos(evn)} value={client.apellido} placeholder="apellido"/>
-              <input type="number" name='telefono' onChange={(evn)=> cargarDatos(evn)} value={client.telefono} placeholder="telefono"/>
-              <input type="text" name='direccion' onChange={(evn)=> cargarDatos(evn)} value={client.direccion} placeholder="direccion"/>
-            </div>
-            <div>
-              <button type="submit" onClick={terminarCompras} placeholder='guardar'>guardar</button>
-            </div>
-        </form>
+      <form className='formulario'>  
+        <ul className='formularioUl'>
+          <li><input className='iForm' type="text" name='nombre' onChange={(evn) => cargarDatos(evn)} value={client.nombre} placeholder="nombre" /></li>
+          <li><input className='iForm' type="text" name='apellido' onChange={(evn)=>  cargarDatos(evn)} value={client.apellido} placeholder="apellido"/></li>
+          <li><input className='iForm' type="number" name='telefono' onChange={(evn)=> cargarDatos(evn)} value={client.telefono} placeholder="telefono"/></li>
+          <li><input className='iForm' type="text" name='direccion' onChange={(evn)=> cargarDatos(evn)} value={client.direccion} placeholder="direccion"/></li>
+          <li><button className='bForm' type="submit" onClick={terminarCompras} placeholder='guardar'>guardar</button></li>
+        </ul>
+      </form>
     </>
   )
 }

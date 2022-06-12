@@ -1,0 +1,30 @@
+.formulario{
+    position: absolute;
+    width: 100%;
+}
+.formularioUl{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.iForm{
+    width: 400px;
+    border-radius: 15px 15px 15px 15px;
+    border: aqua;
+    margin: 20px;
+    padding: 3px;
+    outline: none;
+
+}
+.iForm:hover{
+    outline: none;
+    border: none;
+}
+.bForm{
+    background-color: aquamarine;
+    border: aquamarine;
+    border-radius: 15px 15px 15px 15px;
+    width: 100px;
+    color: rgb(26, 26, 100);
+}
