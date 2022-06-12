@@ -5,7 +5,7 @@ const IrAlcarrito = () => {
   return (
     <>
       <div>
-        <NavLink to={'/cart'}>cart</NavLink>
+        <NavLink to={'/cart'}><button className='btnConter'>Ir al carrito</button></NavLink>
       </div>
     </>
   )

@@ -7,10 +7,12 @@ const ItemCart = ({item}) => {
   return (
     <>
         <div className='row pCart'>
-            <p className='col-lg-3'>{item.title}</p>
-            <p className='col-lg-3'>{item.quantiti}</p>
-            <p className='col-lg-3'>{item.price}</p>
-            <button  className='col-lg-3' onClick={()=>deleteFromCart(item)}><i class="bi bi-cart-dash"></i></button>
+            <p className='col-lg-3'>Producto: {item.title}</p>
+            <p className='col-lg-3'>cantidad:{item.quantity}</p>
+            <p className='col-lg-3'>Precio:{item.price}</p>
+            <div className='col-lg-3'>  
+              <button className='btnC'  onClick={()=>deleteFromCart(item)}><i class="bi bi-cart-dash"></i></button>
+            </div>
         </div>
             
     </>

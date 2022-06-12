@@ -27,8 +27,13 @@ const Cart = () => {
             <p className='col-lg-2'>precio Toral:{pTotal()}</p>
           </div>
           <div className='row cBtn'>
-            <button className='col-lg-9 ' onClick={()=>cleanCart()}><i class="bi bi-cart-x"></i></button>
-            <NavLink to={'/terminar_compra'}><button >finalizar compra</button></NavLink>
+            <div className='col-lg-9'>
+              <button className='btnF'  onClick={()=>cleanCart()}><i class="bi bi-cart-x"></i></button>
+            </div>
+            <div className='col-lg-3'>
+              <NavLink to={'/terminar_compra'}><button className='btnF'>finalizar compra</button></NavLink>
+            </div>
+            
           </div>
         </div>
     )

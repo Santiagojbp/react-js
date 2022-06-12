@@ -21,7 +21,9 @@ const ItemDeatils = (props) => {
     <React.Fragment> 
         <div>
             <img src={imagen}/>
-            <div>{title}</div>
+            <div>Producto:{title}</div>
+            <div><p>Precio:{price}</p></div>
+            <div><p>{description}</p></div>
            {add ? <IrAlcarrito/> :  <ItemCount id={id} stock={stock} initial={1} onAdd={onAdd}/>}
         </div>
     </React.Fragment>

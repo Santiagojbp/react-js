@@ -35,10 +35,10 @@ const ItemCount = ({stock,initial,onAdd,id}) => {
   
   return (
     <React.Fragment>
-        <Button onClick={addHandler}>+</Button>
+        <Button onClick={addHandler}>-</Button>
         <strong>{count}</strong>
-        <Button onClick={resHandler}>-</Button>
-        <button onClick={()=>handleKlick(id, count)}>agregar</button>
+        <Button onClick={resHandler}>+</Button>
+        <button className='btnConter' onClick={()=>handleKlick(id, count)}>agregar</button>
     </React.Fragment>
   )
 }
